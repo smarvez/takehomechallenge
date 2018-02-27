@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Mahee');
+
+.container{
+  margin: 2em auto;
+  max-width: 500px;
+  max-height: 600px;
+  text-align: center;
+  font-family: 'Mukta Mahee', sans-serif;
+  letter-spacing: 1.2px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 5fr 1fr;
+  height: 80vh;
+  /*width: 70vw;*/
+}
+
+.amount-needed{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  position: relative;
+  margin: auto;
+  background: #424242;
+  width: 100%;
+  text-align: center;
+}
+
+.amount-text{
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+
+.amount-needed::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: calc(90% - 25px);
+  background: #424242;
+  width: 15px;
+  height: 10px;
+
+  /* The points are: left top, right top, center bottom */
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.main{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  border: 1px solid #eaeaea;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 10fr 5fr 2fr;
+}
+
+.progress-bar{
+  grid-column: 1/3;
+  background-color: #eaeaea63;
+  border: 1px solid #eaeaea;
+}
+
+#inner-bar{
+  background-color: #EF5F3C;
+  height: 100%;
+  width: 75%;
+}
+
+.words{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-align: left;
+  padding: 1px 35px;
+  font-size: 22px;
+  color: #777;
+}
+
+#special-words{
+  color: #EF5F3C;
+}
+
+#special-number{
+  font-size: 24px;
+}
+
+.donation{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.donation-container{
+  height: 65%;
+  width: 100%;
+  margin-left: 35px;
+  margin-right: 15px;
+  border: 1px solid #eaeaea;;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.dollar-sign{
+  font-family: 'Mukta Mahee', sans-serif;
+  color: #777;
+  padding-left: 20px;
+  font-size: 26px;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  text-align: right;
+}
+
+#money{
+  font-family: 'Mukta Mahee', sans-serif;
+  padding-left: 5px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.give-button{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#give{
+  height: 70%;
+  width: 100%;
+  font-family: 'Mukta Mahee', sans-serif;
+  color: white;
+  background-color: #1CBC2C;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  margin-left: 15px;
+  margin-right: 35px;
+}
+
+#why{
+  grid-column: 1/3;
+  grid-row: 4/5;
+  text-align: left;
+  padding-left: 35px;
+  font-style: italic;
+  font-size: 18px;
+  color: #20A1D4;
+}
+
+.buttons{
+  grid-column: 1/3;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.save{
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share{
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.save-share1{
+  height: 70%;
+  width: 100%;
+  background-color: #eaeaea63;
+  border-radius: 5px;
+  font-family: 'Mukta Mahee', sans-serif;
+  color: #777;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  margin-right: 15px;
+}
+
+.save-share2{
+  height: 70%;
+  width: 100%;
+  background-color: #eaeaea63;
+  border-radius: 5px;
+  font-family: 'Mukta Mahee', sans-serif;
+  color: #777;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  margin-left: 15px;
+}
